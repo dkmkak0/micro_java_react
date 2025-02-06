@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload nha em ok nè nha, nayf laf đang test webhook của dev nè.
+          Edit <code>src/App.js</code> và save to reload nha em ok nè nha, nayf laf đang test webhook của dev nè.
         </p>
         <a
           className="App-link"
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React nè
+          Anh Trai PhuocHau Sayy Hiii
         </a>
       </header>
     </div>
