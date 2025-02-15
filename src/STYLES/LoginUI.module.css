@@ -1,37 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
-/* body {
-  font-family: "Josefin Sans", sans-serif;
-  background-color: #8b827b;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+
 
 .container {
     font-family: "Josefin Sans", sans-serif;
     background-color: #8b827b;
-    height: 100vh;
+    width: 100vw;       /* Chiếm toàn bộ chiều rộng màn hình */
+    height: 100vh;      /* Chiếm toàn bộ chiều cao màn hình */
+    margin: 0;
+    padding: 0;
     text-align: center;
+    position: relative; /* Cho phép phần tử con absolute định vị theo container */
+    display: flex;      /* Sử dụng Flexbox */
+    justify-content: center;  /* Canh giữa theo chiều ngang */
+    align-items: center;      /* Canh giữa theo chiều dọc */
   }
   
-
-.welcomeText {
-  color: white;
-  font-size: 24px;
-  margin-left: 30px;
-
-}
-
-.loginContainer {
-  background: #f8f7f5;
-  padding: 30px;
-  width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: auto;
-}
+  .welcomeText {
+    position: absolute;
+    top: 20px;
+    left: 650px;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .loginContainer {
+    background: #f8f7f5;
+    padding: 30px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    /* Không cần margin auto nữa, vì Flexbox sẽ canh giữa nó */
+  }
+  
 
 .formGroup {
   text-align: left;
