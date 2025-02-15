@@ -19,7 +19,7 @@
   .welcomeText {
     position: absolute;
     top: 20px;
-    left: 650px;
+    left: 600px;
     color: white;
     font-size: 24px;
   }
@@ -42,21 +42,31 @@
 }
 
 .inputField {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #000;
-  border-radius: 0;
-  background: transparent !important;
-  box-shadow: none !important;
-  outline: none !important;
-  caret-color: #000;
-  padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    caret-color: #000;
+    padding: 5px ; /* Tăng padding-right để dành chỗ cho icon */
 }
 
 .inputField:focus,
 .inputField:active {
   border-bottom: 1px solid #a18d7c;
 }
+.eyeIcon {
+    position: absolute;
+    top: 335px;
+    right: 550px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+  }
+
 
 .rememberMe {
   display: flex;
@@ -132,7 +142,7 @@
 
 .signupText {
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .sign {
