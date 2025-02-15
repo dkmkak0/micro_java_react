@@ -1,85 +1,140 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Quần Áo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; }
-        .navbar { background: #333; }
-        .navbar-brand, .nav-link { color: white !important; }
-        .banner { background: url('https://source.unsplash.com/1200x400/?fashion,clothes') no-repeat center; background-size: cover; height: 400px; }
-        .product-card { transition: 0.3s; }
-        .product-card:hover { transform: scale(1.05); }
-        footer { background: #333; color: white; padding: 20px 0; text-align: center; }
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #8b827b;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            margin-left: 425px;
+            background: #f8f7f5;
+            padding: 40px;
+            width: 450px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-btn {
+            background: #a18d7c;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .login-btn:hover {
+            background: #F65454;
+            color: white;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .signup-link {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .sign {
+            display: inline-block;
+            color: black;
+            /* Để hiệu ứng scale hoạt động tốt hơn */
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .sign:hover {
+            color: red;
+            transform: scale(1.1);
+        }
+
+        .forgot {
+            color: black;
+            display: inline-block;
+            /* Để hiệu ứng scale hoạt động tốt hơn */
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .forgot:hover {
+            color: red;
+            transform: scale(1.1);
+        }
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+            background: transparent !important;
+            /* Loại bỏ nền trắng */
+            box-shadow: none !important;
+            outline: none !important;
+            caret-color: #000;
+            /* Giữ màu con trỏ */
+        }
+
+        .form-control:focus,
+        .form-control:active {
+            border-bottom: 1px solid #a18d7c;
+            background: transparent !important;
+            /* Đảm bảo không có nền trắng khi focus */
+            outline: none !important;
+            box-shadow: none !important;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Shop Quần Áo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sản Phẩm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Banner -->
-    <div class="banner d-flex align-items-center justify-content-center">
-        <h1 class="text-white bg-dark px-4 py-2">Thời Trang Hot Nhất</h1>
-    </div>
-    
-    <!-- Danh sách sản phẩm -->
-    <div class="container mt-4">
-        <h2 class="text-center mb-4">Sản Phẩm Nổi Bật</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card product-card">
-                    <img src="https://source.unsplash.com/400x400/?shirt" class="card-img-top" alt="Áo sơ mi">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Áo Sơ Mi</h5>
-                        <p class="card-text">Giá: 350,000 VND</p>
-                        <button class="btn btn-primary">Thêm vào giỏ</button>
-                    </div>
+    <div class="container text-center">
+        <h3 class="text-white">WELCOME TO<br><b>TIỆM RỬA XE</b></h3>
+        <div class="login-container mt-3">
+            <h4>LOGIN</h4>
+            <form>
+                <div class="mb-3 text-start">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" placeholder="">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card product-card">
-                    <img src="https://source.unsplash.com/400x400/?jacket" class="card-img-top" alt="Áo khoác">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Áo Khoác</h5>
-                        <p class="card-text">Giá: 500,000 VND</p>
-                        <button class="btn btn-primary">Thêm vào giỏ</button>
-                    </div>
+                <div class="mb-3 text-start">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card product-card">
-                    <img src="https://source.unsplash.com/400x400/?jeans" class="card-img-top" alt="Quần jeans">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Quần Jeans</h5>
-                        <p class="card-text">Giá: 450,000 VND</p>
-                        <button class="btn btn-primary">Thêm vào giỏ</button>
+                <div class="remember-me mb-3">
+                    <div>
+                        <input type="checkbox"> Remember
                     </div>
+                    <a class="forgot" href="#" class="text-muted" style="text-decoration: none;">Forgot password</a>
                 </div>
+                <button type="submit" class="btn login-btn">LOGIN</button>
+            </form>
+            <p class="mt-3">or</p>
+            <div class="social-icons">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/300/300221.svg" alt="Google">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/733/733547.svg" alt="Facebook">
             </div>
+            <p class="signup-link text-muted">Don't have an account? <a class="sign" href="#"
+                    style="text-decoration: none;">Signup</a></p>
         </div>
     </div>
-    
-    <!-- Footer -->
-    <footer class="mt-4">
-        <p>&copy; 2025 Shop Quần Áo. All Rights Reserved.</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
