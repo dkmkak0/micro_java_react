@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../STYLES/LoginUI.module.css";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const LoginUI = () => {
   return (
@@ -19,7 +20,7 @@ const LoginUI = () => {
           </div>
           <div className={styles.rememberMe}>
             <div>
-              <input type="checkbox" /> Remember
+              <input className= {styles.checkbox} type="checkbox" /> Remember
             </div>
             <a className={styles.forgot} href="#">Forgot password</a>
           </div>
@@ -27,9 +28,9 @@ const LoginUI = () => {
         </form>
         <p className={styles.orText}>or</p>
         <div className={styles.socialIcons}>
-          <div className={styles.iconCircle}>
-            <FaGoogle className={styles.googleIcon} />
-          </div>
+        <div className={styles.iconCircle}>
+            <FcGoogle className={styles.googleIcon} />
+          </div> 
           <div className={styles.iconCircle}>
             <FaFacebook className={styles.facebookIcon} />
           </div>
