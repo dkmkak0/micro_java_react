@@ -1,5 +1,5 @@
-import logo from '../ASSETS/logo.svg';
-import '../STYLES/App.css';
+import logo from "../../ASSETS/logo.svg";
+import '../../STYLES/CustomerCSS/App.css';
 import React from 'react';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        fadfadsfasdfasdf  Edit <code>src/App.js</code> và save to reload nha em ok nè nha, này là đang test webhook của dev nè.
+      Welcome to React Code 2025 by ATH Collective..!
         </p>
         <a
           className="App-link"

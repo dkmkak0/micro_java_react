@@ -2,13 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './COMPONENTS/App';
-import LoginUI from './COMPONENTS/LoginUI';
+import App from './COMPONENTS/CustomerUI/App';
+import LoginUI from './COMPONENTS/CustomerUI/LoginUI';
+import RegisterUI from './COMPONENTS/CustomerUI/RegisterUI';
+import ChangePasswordUI from './COMPONENTS/CustomerUI/ChangePasswordUI';
+import Email_ForgotUI from './COMPONENTS/CustomerUI/Email_ForgotUI';
+import OTP_ForgotUI from './COMPONENTS/CustomerUI/OTP_ForgotUI';
+import NewPasswordUI from './COMPONENTS/CustomerUI/NewPasswordUI';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginUI />
+<App/>
   </React.StrictMode>
 );
 
